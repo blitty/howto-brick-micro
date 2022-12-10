@@ -1,0 +1,66 @@
+\documentclass[a4paper,11pt]{article}
+
+\begin{document}
+
+\begin{titlepage}
+\raggedleft
+{\Huge\scshape How To Brick a Microcontroller}
+\end{titlepage}
+
+\section{Introduction}
+
+This is an indepth technical adventure into the realm of microcontrollers: what
+they are, example use cases, how to program and debug them.
+
+Usually, the goal is \emph{not} to brick microcontrollers and after reading
+through this document, the chance of inadvertently doing so should be much
+reduced.
+
+Have fun!
+
+\section{Microcontroller Overview}
+
+There are microprocessors, microcontrollers and System on a Chip (SoC) devices
+which can seem bewildering at first. How are they different and where do they
+overlap?  Roughly, the distinction can be made by what components are included
+on the physical chip.
+
+The microprocessor, or Central Processor Unit (CPU), in a desktop or laptop
+computer typically requires external IO, ROM and RAM components to form a
+complete system: microcontrollers and SoC devices combine these core components
+in a single tiny device. Some even include audio and video IO capabilities.
+
+Both bundling, and not bundling, components has disadvantages and advantages:
+modular systems notably computers can usually have parts readily upgraded and
+replaced whereas integrated devices are a single unit to replace and work with.
+
+There's no need to design or acquire additional circuitry. Development can be
+simplified as the system has been designed and supplied by a single
+manufacturer. There's no need to add support or detection logic for different
+components or configurations as targetting a specific microcontroller
+implicitly includes a specific set of components.
+
+\section{Example Use Cases}
+
+Scenarios where using a microcontroller makes sense.
+
+Typical advantages of microcontrollers are low power consumption and compact
+size. The chips are usually passively cooled. This makes them appealing for
+battery powered devices and, well, small devices as few additional components
+are required.
+
+Some microcontrollers are specifically designed to handle temperatures and
+operating conditions that computers and other hardware may find extreme -
+including the lack of fans which could get clogged with dust.
+
+\section{Programming Microcontrollers}
+
+The indepth content. How to program microcontrollers. From assembly or a higher
+level language to power up!
+
+\section{Debugging}
+
+Tips and tricks when things do not work as planned or intended.
+
+\end{document}
+
